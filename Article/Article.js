@@ -14,6 +14,7 @@ class Article {
 
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
+    TweenLite.to( this.domElement, 2.5, { ease: Elastic.easeInOut, y: -15 });
     this.domElement.classList.toggle('article-open');
   }
 }
